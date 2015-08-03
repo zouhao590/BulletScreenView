@@ -197,6 +197,7 @@ public class AsyncBulletView extends SurfaceView implements Callback{
 		public DrawThread(SurfaceHolder holder) {
 			super();
 			this.holder = holder;
+			setPriority(Thread.MAX_PRIORITY);
 		}
 		
 		@Override
